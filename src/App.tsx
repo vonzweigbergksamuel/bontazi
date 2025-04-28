@@ -1,3 +1,4 @@
+import { BentoGridSection } from "./components/BentoGrid";
 import HeroSection from "./components/HeroSection";
 import Nav from "./components/Nav";
 import TradingViewTicker from "./components/TradingViewTicker";
@@ -8,6 +9,7 @@ export default function App() {
       <Nav />
       <HeroSection />
       <TradingViewTicker />
+      <BentoGridSection />
     </main>
   );
 }

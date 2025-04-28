@@ -1,5 +1,6 @@
 import { RiShoppingBag4Line } from "react-icons/ri";
 import { RxDoubleArrowRight } from "react-icons/rx";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
@@ -10,7 +11,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-10 bg-overlay-70 mix-blend-multiply" />
       <div className="absolute inset-0 z-20 bg-overlay-80 bg-(image:--overlay-gradient) mix-blend-multiply" />
       <video
-        src="/6794226-uhd_2560_1440_30fps.mp4"
+        src="/hero-video.mp4"
         autoPlay
         loop
         muted
@@ -29,14 +30,20 @@ export default function HeroSection() {
           investeringar ger våra böcker inom teknisk analys dig den kunskap du
           behöver för att navigera börsen med självförtroende.
         </p>
-        <div className="font-heading sm:text-lg flex flex-col sm:flex-row justify-center mt-8 font-normal tracking-wide w-full px-8">
-          <button className="bg-primary flex items-center justify-between p-4 md:p-5 gap-5 text-white">
-            HÄMTA DIN GRATIS E-BOK NU{" "}
-            <RxDoubleArrowRight className="rotate-45" />
-          </button>
-          <button className="bg-white/80 flex items-center justify-between p-4 md:p-5 gap-2">
-            SE VÅRA PRODUKTER <RiShoppingBag4Line className="mb-1" />
-          </button>
+        <div>
+          <div className="font-heading sm:text-lg flex flex-col sm:flex-row justify-center mt-16 font-normal tracking-wide w-full px-8">
+            <button className="bg-primary flex items-center justify-between p-4 md:p-5 gap-5 text-white">
+              HÄMTA DIN GRATIS E-BOK NU{" "}
+              <RxDoubleArrowRight className="rotate-45" />
+            </button>
+            <button className="bg-white/80 flex items-center justify-between p-4 md:p-5 gap-2">
+              SE VÅRA PRODUKTER <RiShoppingBag4Line className="mb-1" />
+            </button>
+          </div>
+          <div>
+            <FaInstagram />
+            <FaFacebook />
+          </div>
         </div>
       </div>
     </section>
